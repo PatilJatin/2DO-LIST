@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="400.0" style="-fx-background-color: #464242;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="IconImageView" fitHeight="70.0" fitWidth="62.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/todo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="TaskLabel" layoutX="60.0" layoutY="4.0" prefHeight="30.0" prefWidth="292.0" text="Task" textFill="#eeecec">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="DescriptionLabel" layoutX="64.0" layoutY="33.0" prefHeight="30.0" prefWidth="335.0" style="-fx-background-color: #ffffff;" text="Description" textFill="#070606">
+         <effect>
+            <DropShadow />
+         </effect></Label>
+      <Label fx:id="DateLabel" alignment="CENTER" layoutX="232.0" layoutY="68.0" prefHeight="17.0" prefWidth="169.0" text="Date Created" textFill="#00ff40" />
+      <ImageView fx:id="DeleteButton" fitHeight="30.0" fitWidth="33.0" layoutX="356.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/delete.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AddFormScenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: f5f5f5;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddItemFormController">
+   <children>
+      <TextField fx:id="description" alignment="TOP_LEFT" layoutX="167.0" layoutY="179.0" prefHeight="126.0" prefWidth="268.0" promptText="Description">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="taskField" layoutX="166.0" layoutY="116.0" prefHeight="38.0" prefWidth="268.0" promptText="Task">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Button fx:id="saveTaskButton" layoutX="225.0" layoutY="319.0" mnemonicParsing="false" style="-fx-background-color: #eb2727;" text="Save Your Task" textFill="#f5ecec">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="-2.0" layoutY="-1.0" prefHeight="99.0" prefWidth="606.0" style="-fx-background-color: #464242;">
+         <children>
+            <Label alignment="CENTER" layoutX="240.0" layoutY="21.0" prefHeight="71.0" prefWidth="126.0" text="2DO" textFill="#eeeeee">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Label>
+            <Label fx:id="successfulLabel" alignment="CENTER" layoutX="385.0" layoutY="29.0" prefHeight="62.0" prefWidth="205.0" text="Task added successfully!!      Add another one" textFill="#0af20a" visible="false" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="AddItemFormLogOut" layoutY="34.0" mnemonicParsing="false" onAction="#LogOut" style="-fx-background-color: #eb2727;" text="Log out" textFill="#f5ecec">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="todosButton" layoutX="477.0" layoutY="350.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: #464242;" text="My TODO List" textFill="#eeeeee" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
